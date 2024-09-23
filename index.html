@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        .navbar-custom {
+            background-color: #769983;
+        }
+        :root{
+            --beige: #DFDFD5;
+            --verde-claro: #769983;
+            --verde-oscuro: #496755;
+            --amarillo: #E7A922;
+        }
+        .beige{
+            color: var(--beige)
+        }
+        .verde-claro{
+            color: var(--verde-claro)
+        }
+        .verde-oscuro{
+            color: var(--verde-oscuro)
+        }
+        .amarillo{
+            color: var(--amarillo)
+        }
+        .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1rem; 
+    bottom: 10%; 
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #DFDFD5 !important;
+            font-size: 1.1rem;
+        }
+        .custom-section {
+            background-color: #769983;
+            border-radius: 15px;
+            padding: 2rem;
+        }
+        .custom-text {
+            color: white;
+            font-size: 1.2rem;
+        }
+        .circle-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #496755; 
+}
+.btn-custom {
+    background-color: #E7A922;
+    color: white;
+}
+.bg-success {
+    background-color: #769983 !important;
+}
+.me-2 {
+    margin-right: 10px; /* Espaciado entre los íconos */
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#"><img src="img/logo ecovida blanco.png" alt="Logo EcoVida" width="130"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Donaciones.html">Donaciones</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-3">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-light" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="ecoVidaCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/homeimg1.jpg" class="d-block w-100" alt="..." style="max-height: 700px; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+            <img src="img/imghome2.jpg" class="d-block w-100" alt="..." style="max-height: 700px; object-fit: cover;">
+        </div>
+        <div class="carousel-item">
+            <img src="img/imghome3.jpg" class="d-block w-100" alt="..." style="max-height: 700px; object-fit: cover;">
+        </div>
+    </div>
+    
+    <div class="carousel-caption d-none d-md-block text-center p-3" style="background-color: rgba(0, 0, 0, 0.5); bottom: 10%;">
+        <h5>UN PEQUEÑO GESTO HOY, UN GRAN IMPACTO MAÑANA.</h5>
+        <p>El futuro se construye con cada elección presente.</p>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#ecoVidaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ecoVidaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#ecoVidaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ecoVidaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <div class="custom-section">
+                <h2 class="text-white">En EcoVida.</h2>
+                <p class="custom-text">
+                    Nos dedicamos a proteger el planeta a través de la conservación, la educación ecológica y la reforestación.
+                    Únete a nosotros en la construcción de un futuro sostenible y armonioso.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/volutarios home.jpg" alt="Grupo de voluntarios" class="img-fluid rounded">
+        </div>
+    </div>
+    <!-- Sección de proyectos -->
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-lg-4 mb-4">
+            <img src="img/abejas.jpg" alt="Nuestros Proyectos" class="circle-img">
+            <h3 class="section-title">Nuestros Proyectos</h3>
+            <p>Reforestación y restauración de ecosistemas. Campañas de concienciación. Gestión de residuos. Promoción de energías renovables. Polinizadores. Proyectos de conservación marina.</p>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <img src="img/equipohome.jpg" alt="Nuestro Equipo" class="circle-img">
+            <h3 class="section-title">Nuestro Equipo</h3>
+            <p>Somos un equipo de ambientalistas unidos por un objetivo: proteger nuestro planeta. Juntos, trabajamos para crear un impacto positivo en la conservación y sostenibilidad.</p>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <img src="img/donahome.jpg" alt="Anímate Dona" class="circle-img">
+            <h3 class="section-title">Anímate Dona</h3>
+            <p>Donar a una ONG ambiental es invertir en un planeta más verde y sostenible. Tu contribución marca la diferencia en la protección de la naturaleza y la lucha contra el cambio climático.</p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="https://wa.me/5732193332026" class="btn btn-custom px-4 py-2">Más Información</a>
+
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-success beige py-3">
+    <div class="container">
+        <div class="row text-center align-items-center">
+            <div class="col-md-3 mb-3 mb-md-0">
+                <!-- Íconos de redes sociales -->
+                <a href="https://wa.me/5732193332026"><img src="img/whatsapp.png" alt="WhatsApp" class="me-2" width="30"></a>
+                <a href="https://www.instagram.com/orl.induran/profilecard/?igsh=MTB4MnFhOG1wNXUzbg=="><img src="img/instagram.png" alt="Instagram" class="me-2" width="30"></a>
+                <a href="#"><img src="img/youtube.png" alt="YouTube" class="me-2" width="30"></a>
+                <a href="https://www.facebook.com/orlinyussette.amayaduran?mibextid=ZbWKwL"><img src="img/facebook.png" alt="Facebook" class="me-2" width="30"></a>
+                <a href="https://www.tiktok.com/@orlinduran?_t=8pyLIsCmmyz&_r=1"><img src="img/tiktok.png" alt="TikTok" class="me-2" width="30"></a>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <p class="mb-0">Calle 210 #44-33 Bogotá</p>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+                <p class="mb-0">Orlin Duran © 2024</p>
+            </div>
+            <div class="col-md-2">
+            
+                <img src="img/logo ecovida blanco.png" alt="Logo EcoVida" width="100">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

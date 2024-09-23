@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       :root{
+            --beige: #DFDFD5;
+            --verde-claro: #769983;
+            --verde-oscuro: #496755;
+            --amarillo: #E7A922;
+        }
+        .beige{
+            color: var(--beige)
+        }
+        .verde-claro{
+            color: var(--verde-claro)
+        }
+        .verde-oscuro{
+            color: var(--verde-oscuro)
+        }
+        .amarillo{
+            color: var(--amarillo)
+        }
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #DFDFD5 !important;
+            font-size: 1.1rem;
+        }
+        .custom-section {
+            background-color: #769983;
+            border-radius: 15px;
+            padding: 2rem;
+        }
+        .custom-text {
+            color: white;
+            font-size: 1.2rem;
+        }
+        .navbar-custom {
+        background-color: #769983;
+    }
+
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #DFDFD5 !important;
+            font-size: 1.1rem;
+        }
+
+       .hero-ecovida {
+    position: relative;
+}
+
+    .hero-ecovida .hero-text {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1rem;
+}
+
+.hero-ecovida img {
+    max-height: 600px;
+    object-fit: cover;
+}
+.btn-custom {
+    background-color: #F4A261;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #e08950;
+}
+.bg-success {
+    background-color: #769983 !important; 
+}
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#"><img src="img/logo ecovida blanco.png" alt="Logo EcoVida" width="130"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Donaciones.html">Donaciones</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-3">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-light" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<section class="hero-ecovida position-relative">
+    <!-- Imagen de fondo -->
+    <img src="img/personasdonacion.jpg" alt="donaciones" class="img-fluid w-100" style="max-height: 600px; object-fit: cover;">
+    <div class="hero-text position-absolute bottom-0 start-0 w-100 text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.5);">
+        <h1>Tu donación apoya nuestra misión de proteger nuestro 
+            planeta y fomentar un futuro sostenible..</h1>
+    </div>
+</section>
+<!-- Donaciones -->
+<section class="donacion-section py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Al donar, no solo ayudamos a proteger el medio ambiente, sino que también nos convertimos en agentes de cambio, inspirando a otros a unirse a la causa. ¡Cada pequeño gesto cuenta!</h3>
+        <form action="procesar_donacion.php" method="POST">
+            <div class="mb-3">
+                <label for="tipoCuenta" class="form-label">Tipo de cuenta</label>
+                <input type="text" class="form-control" id="tipoCuenta" name="tipoCuenta" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="numeroCuenta" class="form-label">Número de cuenta</label>
+                <input type="text" class="form-control" id="numeroCuenta" name="numeroCuenta" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="nombreTitular" class="form-label">Nombre del titular</label>
+                <input type="text" class="form-control" id="nombreTitular" name="nombreTitular" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="numeroDocumento" class="form-label">Número de documento</label>
+                <input type="text" class="form-control" id="numeroDocumento" name="numeroDocumento" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="montoDonacion" class="form-label">$</label>
+                <input type="number" class="form-control" id="montoDonacion" name="montoDonacion" step="0.01" min="0" required>
+            </div>
+
+            <!-- Botón de Donar -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-custom px-4">Donar</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-success beige py-3">
+    <div class="container">
+        <div class="row text-center align-items-center">
+            <div class="col-md-3 mb-3 mb-md-0">
+                <!-- Íconos de redes sociales -->
+                <a href="https://wa.me/5732193332026"><img src="img/whatsapp.png" alt="WhatsApp" class="me-2" width="30"></a>
+                <a href="https://www.instagram.com/orl.induran/profilecard/?igsh=MTB4MnFhOG1wNXUzbg=="><img src="img/instagram.png" alt="Instagram" class="me-2" width="30"></a>
+                <a href="#"><img src="img/youtube.png" alt="YouTube" class="me-2" width="30"></a>
+                <a href="https://www.facebook.com/orlinyussette.amayaduran?mibextid=ZbWKwL"><img src="img/facebook.png" alt="Facebook" class="me-2" width="30"></a>
+                <a href="https://www.tiktok.com/@orlinduran?_t=8pyLIsCmmyz&_r=1"><img src="img/tiktok.png" alt="TikTok" class="me-2" width="30"></a>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <!-- Dirección -->
+                <p class="mb-0">Calle 210 #44-33 Bogotá</p>
+            </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+                <!-- Derechos de autor -->
+                <p class="mb-0">Orlin Duran © 2024</p>
+            </div>
+            <div class="col-md-2">
+                <!-- Logo de EcoVida -->
+                <img src="img/logo ecovida blanco.png" alt="Logo EcoVida" width="100">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
